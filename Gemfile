@@ -29,7 +29,8 @@ gem 'omniauth-facebook'
 gem 'devise'
 # Use Unicorn as the app server
 # gem 'unicorn'
-
+# gem for postgresql 
+gem 'pg'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
