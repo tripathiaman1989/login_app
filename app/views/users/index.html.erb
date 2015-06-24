@@ -11,16 +11,22 @@
 
   <tbody>
       <tr>
-        <td><%= @user.email if !@user.email.nil? %></td>
+        <td> Email: <%= @user.email if !@user.email.nil? %></td>
       </tr>
       <tr>
-        <td><%= @user.first_name if !@user.first_name.nil? %> <%= @user.last_name if !@user.last_name.nil?%></td>
+      	<%if !@user.first_name.nil?%>
+        <td> Full Name: <%= @user.first_name %> <%= @user.last_name if !@user.last_name.nil?%></td>
+        <% end %>
       </tr>
       <tr>
-        <td><%= @user.gender if !@user.gender.nil? %></td>
+      	<%if !@user.gender.nil? %>
+        <td> Gender: <%= @user.gender %></td>
+        <% end %>
        </tr>
        <tr>
-        <td><%= @user.link if !@user.link.nil? %></td>
+       	<%if !@user.link.nil? %>
+        <td>Facebook Link: <%= @user.link %></td>
+          <% end %>
       </tr>
   </tbody>
 </table>
